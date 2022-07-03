@@ -1,18 +1,22 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+  <div class="home bg-gray-300">
+    <div class="container mx-auto flex justify-center">
+      <TwitterSearchBox />
+      <TwitterResultList />
+    </div>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from "@/components/HelloWorld.vue";
+// components
+import TwitterSearchBox from "../components/TwitterSearchBox.vue";
+import TwitterResultList from "../components/TwitterResultList.vue";
 
 export default {
   name: "Home",
   components: {
-    HelloWorld,
+    TwitterSearchBox,
+    TwitterResultList,
   },
 };
 </script>
